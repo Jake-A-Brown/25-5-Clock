@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 
-function App() {
+const App=()=> {
+  const{handleBreakIncrease, breakLength, handleBreakDecrease, handleSessionIncrease, 
+    sessionLength, handleSessionDecrease, play, handlePlay, handleReset, title,
+     timeFormatter= ()=>'25:00'}={};
   return (
     <div>
       <div className='wrapper'>
@@ -29,7 +32,7 @@ function App() {
             <h2 id='timer-label'>{title}</h2>
             <h3 id='time-left'>{timeFormatter()}</h3>
           </div>
-          <button onClick={handlePlay} id='start-stop'>Start/Stop</button>
+          <button onClick={handlePlay} id='start_stop'>Start/Stop</button>
           <button onCLick={handleReset} id='reset'>Reset</button>
         </div>
       </div>
