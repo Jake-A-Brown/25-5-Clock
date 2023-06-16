@@ -1,55 +1,120 @@
-body{
-    background-color: grey;
-    font-size: 24px;
-}
-
-.wrapper{
+body {
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
     display: flex;
     height: 100vh;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.wrapper h2{
-    margin: 0;
-}
-
-.break-session-length{
+    justify-content: center;
+  }
+  
+  .wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .wrapper h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .break-session-length {
     display: flex;
-    width: 500px;
     justify-content: space-between;
-}
-
-button{
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .length-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .length-controls button {
+    background-color: #007bff;
     border: none;
-    padding: 8px;
-    font-size: 18px;
     border-radius: 4px;
-}
-
-div>button{
-    color: white;
-    background-color: green;
-}
-
-div button:nth-child(2){
-    color: #000;
-    background-color: yellow;
-}
-
-strong{
-    margin: 0 8px;
-}
-
-.timer{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .length-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .break-session-length strong {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  .timer {
     border: 2px solid #ccc;
     border-radius: 10px;
-    text-align: center;
-    margin: 20px 0;
-    padding-top: 10px;
-}
-
-.time-wrapper>button{
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .timer h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  
+  }
+  
+  .timer h3 {
+    font-size: 36px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .time-wrapper button {
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
     margin-left: 10px;
-}
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .time-wrapper button:hover {
+    background-color: #1b8f36;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  audio {
+    display: none;
+  }
+
+  /* #break-label, #session-label{
+    border: 1px solid blue;
+  }
+   */
